@@ -1,0 +1,15 @@
+Assignment 3 - Rashmi Rajendra Joshi
+
+Problem statement : Two additional extensions to think about is how to model a ride from a to b and determine
+current location of vehicles.
+
+Idea Proposed : 
+To model a ride from point A to Point B, we can use the grid system to determine the approximte distance between the points. 
+For example point A is (2,4) and point B is (5,4) then the route/distance is v (x2 - x1)2 + (y2 - y1)2 
+
+To select a car for a ride, we can first get the location of the car on the grid, then find the distance of the pickup. 
+If distance of Car1 is shorter than Car2 for pickup and if the destination of the ride is in the preferred list of Car1, then choose Car1
+
+If multiple cars are available for the selection, cars can be sorted based on shortest distance to the pickup point.
+
+The above grid implementation gives approximate distance to be travelled in 2D. To achieve accuracy of determining the location of the car and to model the ride from point A to point B, Google Maps API can be used.
