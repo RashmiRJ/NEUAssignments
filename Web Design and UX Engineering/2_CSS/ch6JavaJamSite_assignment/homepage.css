@@ -1,0 +1,36 @@
+@media screen and (max-width: 350px) {
+	body { margin: 0; }
+    #wrapper { width: auto; 
+        min-width: auto;}                                                              
+	main { margin-left: 0; }
+	nav { float: none; 
+          width: auto; }
+	nav li { display: inline-block; 
+              }
+	nav ul { text-align: center; }
+	nav a { border-style: none; }
+	h1, h2 { font-size: 120%; }
+    p { font-size: 90%; }
+    #hero {
+        background-image: none;
+        color: brown;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	h1, h2 { font-size: 100%; }
+	span { font-size: 80%; } 
+  	figure { display: none;}
+ 	nav, nav ul, nav li { padding: 0; }
+ 	nav li { display: block; }
+    nav a { display: block; 
+      	padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D; }
+        #hero {
+            background-image: none;
+            color: brown;
+        }
+        #wrapper { width: auto; 
+            min-width: auto;}    
+    }
+  

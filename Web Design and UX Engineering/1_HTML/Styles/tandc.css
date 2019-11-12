@@ -1,0 +1,7 @@
+/*Specific CSS for "Terms and Conditions" Page
+CSS in addition to the main page css*/
+
+p {
+    text-align: justify;
+    padding: 12px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Feedback</title>
+    <style>
+        label {
+            float: left;
+            width: 150px;
+        }
+        
+        #container {
+            width: 700px;
+            margin: auto;
+            background-color: beige;
+        }
+        
+        main {
+            padding: 50px;
+        }
+        
+        #extraInfo {
+            padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <main>
+            <div id="formPage">
+                <h2>Feeback</h2>
+                <h3>Love something? Hate something? Let us know!</h3>
+                Note : Fields marked with an asterisk(*) are mandatory
+                <br><br>
+                <form name="feedbackForm" id="feedbackForm" onsubmit="checkValid(document.feedbackForm.zipcode.value,document.feedbackForm.emailId.value, document.feedbackForm.phoneNumber.value)" action="Table.html">
+                    <label>Title*:</label>
+                    <input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+                    <input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+                    <input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs.
+
+                    <br><br>
+                    <label for="firstName">First Name*:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+                    <br><br>
+
+
+                    <label for="lastName">Last Name*:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+                    <br><br>
+
+
+                    <label for="emailId">Email Id*:</label>
+                    <input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" onkeyup="isValidEmail(document.feedbackForm.emailId.value)" required />
+                    <span id="emailIdValid">Invalid EMail</span>
+                    <br><br>
+
+
+                    <label for="phoneNumber">Phone Number*:</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" onkeyup="isValidTelephoneNumber(document.feedbackForm.phoneNumber.value)" required />
+                    <span id="phoneNumberValid">Invalid Phone Number</span>
+                    <br><br>
+
+                    <label for="zipcode">ZipCode*:</label>
+                    <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" onkeyup="isValidPostalCode(document.feedbackForm.zipcode.value)" required />
+                    <span id="zipcodeValid">Invalid Zip Code</span>
+                    <br><br>
+
+                    <label for="how">How did you hear*:</label>
+                    <input type='checkbox' name="source" value="facebook" onchange="toggleHw(this)" /> Facebook
+                    <input type='checkbox' name="source" value="google" onchange="toggleHw(this)" /> Google
+                    <input type='checkbox' name="source" value="yelp" onchange="toggleHw(this)" /> Yelp
+                    <span id="checkMandatory">Choose one option</span>
+                    <br><br>
+
+                    <label for="favDrink">Your favourite drink:</label>
+                    <select name="selectPosition" id="selectPosition" onchange="toggleSelect(this)">
+                        <option value="Just Java">Just Java</option>
+                        <option value="Cafe au Lait">Cafe au Lait</option>
+                        <option value="Iced Cappucino">Iced Cappucino</option>
+                        <option value="Mocha Latte">Mocha Latte</option>
+                        <option value="Lite Latte">Lite Latte</option>
+                    </select>
+                    <br><br>
+
+                    <div id="extraInfo">
+                        <input type='checkbox' name="dynChk" id="dynChk" onclick="toggleCheckbox(this)" />
+                        <span id="dynLbl"> Endless Cup $2.00</span>
+                        <input type="text" name="dynText" id="dynText" placeholder="special instructions" />
+                    </div>
+                    <br><br>
+
+                    <label></label>
+
+
+                    <label for="comments">Comments*:</label>
+                    <textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" />
+                    <input type="Reset">
+                    <br><br>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

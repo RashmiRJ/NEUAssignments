@@ -1,0 +1,88 @@
+body {
+    background: url("background.gif");
+    background-color: #F5F5DC;
+    color: #2E0000;
+    font-family: 'Verdana', 'Ariel', 'sans-serif'; 
+}
+
+header {
+    background-color: #D2B48C;
+}
+
+footer {
+    background-color: #D2B48C;
+    color: #000000;
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+#wrapper {
+    width: 80%; 
+    min-width: 960px;
+    max-width: 2048px;
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #F5F5DC;
+    box-shadow: 3px 3px 3px #2E0000;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #E6D6A9;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Georgia', 'Times New Roman', 'serif';
+   
+    margin: 0; 
+    /*
+     height:100px;
+     background: url("javajamlogo.jpg");
+    text-indent:-9999px;    
+    background-repeat: no-repeat;
+    background-position: 50%;*/
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Georgia', 'Times New Roman', 'serif'
+}
+
+h3 {
+    background-color: #E6D6A9;
+    text-transform: uppercase;
+}
+
+dt {
+    font-weight: bold;
+}
+
+ul {
+    list-style-image: url('marker.gif');
+}
+
+main {
+    padding: 20px;
+    display: block;
+}
+
+#hero {
+    height: 300px;
+    color: #F5F5DC;
+    background-size: 100% 100%;
+    background-image: url('windingroad.jpg');
+    background-repeat: no-repeat;
+}
+
+.news {
+    margin-left: 20%;
+    margin-right: 20%;
+}

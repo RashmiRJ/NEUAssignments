@@ -1,0 +1,272 @@
+body {
+    background: url("background.gif");
+    background-color: #F5F5DC;
+    color: #2E0000;
+    font-family: 'Verdana', 'Ariel', 'sans-serif'; 
+}
+
+header {
+    background-color: #D2B48C; 
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+   /* background: linear-gradient(135deg, rgba(52, 152, 219,0.5) 0%,rgba(243, 65, 65, 0.4) 100%);*/
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: #D2B48C; color: #2E0000; }
+    25%  {background-color: #2E0000; color: #D2B48C;}
+    50%  {background-color: #D2B48C; color: #2E0000;  }
+    75%  {background-color: #2E0000; color: #D2B48C; }
+    100% {background-color: #D2B48C; color: #2E0000; }
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    0%   {background-color: #D2B48C; color: #2E0000; }
+    25%  {background-color: #2E0000; color: #D2B48C;}
+    50%  {background-color: #D2B48C; color: #2E0000;  }
+    75%  {background-color: #2E0000; color: #D2B48C; }
+    100% {background-color: #D2B48C; color: #2E0000; }
+  }
+
+#gallery { position: relative; }
+
+#gallery ul { 
+             list-style-type: none; }
+
+#gallery li { display: block;
+              padding: 10px;
+              width: 25%; }
+              
+#gallery img { border-style: none; }
+
+#gallery a { text-decoration: none; 
+             color: brown;  }
+
+#gallery span { display: none; } 
+
+#gallery a:hover span { display: block; 
+                        position: absolute;
+					    top: 10px; 
+						left: 350px; 
+                        text-align: center;
+                        -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+                        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */ /* Safari 4.0 - 8.0 */
+                        animation-name: example2;
+                        animation-duration: 1s; }
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.20;}
+    50%  {opacity: 0.50;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 1.0;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example2 {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.20;}
+    50%  {opacity: 0.50;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 1.0;}
+  }
+
+
+footer {
+    background-color: #D2B48C;
+    color: #000000;
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+#wrapper {
+    width: 80%; 
+    min-width: 960px;
+    max-width: 2048px;
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #F5F5DC;
+    box-shadow: 3px 3px 3px #2E0000;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #F5F5DC;
+    background-image: linear-gradient(to bottom right,#E6D6A9, rgb(250, 203, 75));
+}
+
+nav ul { list-style-type: none; 
+    margin: 0;
+}
+
+nav li { padding: 0.5em;
+    display: inline-block;
+}
+
+nav a:link{
+    color: #F5F5DC;
+}
+
+nav a:visited{
+    color: #A58366;
+}
+
+nav a:hover{
+    color: #795240;   
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
+
+nav ul ul { position: absolute;
+    background-color:#D2B48C;
+    padding: 0;
+    display: none; 
+    text-align: left;
+}
+nav ul ul li { border: 1px solid black;
+    display: block;
+    width: 7em;
+    padding-left: 1em;
+    margin-left: 0; 
+}
+nav li:hover ul { display: block; }
+
+
+
+h1 {
+    font-family: 'Georgia', 'Times New Roman', 'serif';
+    margin: 0; 
+    
+    /*
+     height:100px;
+     background: url("javajamlogo.jpg");
+    text-indent:-9999px;    
+    background-repeat: no-repeat;
+    background-position: 50%;*/
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Georgia', 'Times New Roman', 'serif'
+}
+
+h3 {
+    background-color: #E6D6A9;
+    text-transform: uppercase;
+}
+
+dt {
+    font-weight: bold;
+}
+
+ul {
+    list-style-image: url('marker.gif');
+}
+
+main {
+    padding: 20px;
+    display: block;
+}
+
+#hero {
+    height: 300px;
+    color: #F5F5DC;
+    background-size: 100% 100%;
+    background-image: url('windingroad.jpg');
+    background-repeat: no-repeat;    
+  text-shadow: 2px 2px 2px red;
+}
+
+.news {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.jobsForm {
+    margin-left: 30%;
+}
+
+.menuTable { margin: auto; 
+    border: 1px solid brown; 
+    width: 80%; 
+    border-spacing: 1;
+}
+.menuTable td, th { padding: 5px; 
+     font-family: Arial, sans-serif;
+     border-style: none; 
+}
+
+.altrow { background-color:#E6D6A9; }
+
+.submitBtn { background-color: brown;
+    color: cornsilk;}
+
+@media screen and (max-width: 350px) {
+	body { margin: 0; }
+    #wrapper { width: auto; 
+        min-width: auto;}                                                              
+	main { margin-left: 0; }
+	nav { float: none; 
+          width: auto; }
+	nav li { display: inline-block; 
+              }
+	nav ul { text-align: center; }
+	nav a { border-style: none; }
+	h1, h2 { font-size: 120%; }
+    p { font-size: 90%; }
+    #hero {
+        background-image: none;
+        color: brown;
+    }
+
+    #gallery a:hover span { display: none;} 
+    #gallery img { border-style: none;
+    width: 270px;
+    height: 250px; }
+    
+}
+
+@media screen and (max-width: 768px) {
+	h1, h2 { font-size: 100%; }
+	span { font-size: 80%; } 
+  	figure { display: none;}
+ 	nav, nav ul, nav li { padding: 0; }
+ 	nav li { display: block; }
+    nav a { display: block; 
+      	padding: 0.5em 0;
+        border-bottom: 2px ridge #00005D; }
+        #hero {
+            background-image: none;
+            color: brown;
+        }
+        #wrapper { width: auto; 
+            min-width: auto;}  
+
+            #gallery a:hover span { display: none;} 
+
+            #gallery img { border-style: none;
+            width: 270px;
+            height: 250px; }
+
+            
+        
+    }
+  
+

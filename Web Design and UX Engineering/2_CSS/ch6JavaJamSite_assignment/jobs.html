@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaJam Coffee House</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="javajam.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+        <header><h1>JavaJam Coffee House</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a>
+                    <ul>
+                        <li><a href="menu.html">Hot Brews</a></li>
+                        <li><a href="menu.html">Cold Brews</a></li>
+                      </ul>
+                </li>
+                <!--<li><a href="music.html">Music</a></li>-->
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <main>
+                <form>
+                        <h2>Apply and Work with us</h2>
+                        <p>Please fill in this form and you'll hear from us soon</p>
+                        <table class="jobsForm">
+                          <tr>
+                            <td>
+                              <label><b>Name *</b></label>
+                            </td>
+                            <td>
+                              <input type="text" placeholder="Full Name" name="fullName" required>
+                            </td>
+                          </tr>
+                
+                          <tr>
+                            <td>
+                              <label><b>D.O.B *</b></label>
+                            </td>
+                            <td>
+                              <input type="date" name="dob" required>
+                            </td>
+                          </tr>
+                
+                          <tr>
+                            <td>
+                              <label><b>Full Address</b></label>
+                            </td>
+                            <td>
+                              <input type="text" placeholder="Ex: ABC Street, Boston, MA 02113" name="addr">
+                            </td>
+                          </tr>
+                
+                          <tr>
+                            <td>
+                              <label><b>Phone *</b></label>
+                            </td>
+                            <td>
+                              <input type="tel" placeholder="Ex: 123 456 7890" name="phone" required>
+                            </td>
+                          </tr>
+                
+                          <tr>
+                            <td>
+                              <label><b>Email</b></label>
+                            </td>
+                            <td>
+                              <input type="text" placeholder="Ex: ABC@xyz.com" name="email">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label><b>Select Position *</b></label>
+                            </td>
+                            <td>
+                              <select name="selectPosition" required="">
+                                <option value="MANAGER">MANAGER</option>
+                                <option value="SHIFT MANAGER">SHIFT MANAGER</option>
+                                <option value="SERVICE EXECUTIVE">SERVICE EXECUTIVE</option>
+                                <option value="CASHIER">CASHIER</option>
+                                <option value="BARISTA">BARISTA</option>
+                                <option value="DELIVERY BOY">DELIVERY BOY</option>
+                                <option value="SOUS CHEF">SOUS CHEF</option>
+                                <option value="OTHERS">OTHERS</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <button type="submit" class="submitBtn">Submit Application</button>
+                            </td>
+                          </tr>
+                        </table>
+                        </form>
+        </main>
+        <footer>
+            Copyright &copy; 2016 JavaJam Coffee House <br>
+            <a href="mailto:joshi.ras@husky.neu.edu">joshi.ras@husky.neu.edu</a>
+        </footer>
+    </div>
+    </body>
+</html>

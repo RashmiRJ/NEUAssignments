@@ -1,0 +1,97 @@
+/* Main CSS used for header, footer background, home page and overall website layout*/
+
+body {
+  font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 52px;
+  margin:12px;
+}
+header {
+  background-color:cornsilk;
+  padding: 10px;
+  text-align: center;
+  color:brown;
+}
+
+footer {
+  background-color: cornsilk;
+  text-align: center;
+  color:brown;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+footer a{
+  color:brown;
+}
+
+nav {   
+  overflow: hidden;
+  background-color: brown;
+}
+
+nav a {
+  float: left;
+  color: cornsilk;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  transform: scale(1.2); 
+  text-decoration-line: underline;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pageContent {
+  overflow: auto;
+  background: url("Images/coffeeBeans.jpeg") burlywood;
+}
+
+.midSection {
+  background-color: rgba(222, 184,135, 0.9);
+  color: rgba(109,28,28,1);
+  float:left;
+  width:60%;
+  margin-left: 20%;
+  text-align: center;
+  height: 100%;
+}
+.reviewSection {
+  border: 2px solid goldenrod;
+  background-color:  rgb(235, 216, 192); ;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-right: 30%;
+  overflow-y: hidden;
+  width:70%;
+}
+
+.reviewSectionRight {
+  border: 2px solid goldenrod;
+  background-color:  rgb(235, 216, 192); ;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 30%;
+  width:70%;
+  float:right;
+}
+
+.reviewSectionImg {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 70px;
+}

@@ -1,0 +1,13 @@
+/*Specific CSS for "About" Page
+CSS in addition to the main page css*/
+
+.left {
+    padding: 25px;
+    text-align: left;
+}
+
+.right {
+    padding: 25px;
+    text-align: right;
+    margin-right: 10%;
+}
