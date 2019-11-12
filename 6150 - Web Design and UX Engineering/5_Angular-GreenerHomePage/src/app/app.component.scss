@@ -1,0 +1,86 @@
+.navbar {
+    background-color: #7DA89E;
+    padding: 0.5rem 1.5rem;
+    .navbar-brand {
+        color: #ffffff;
+        margin-right: 3rem;
+        font-size: 2rem;
+    }
+    .nav-link {
+        color: #ffffff;
+    }
+}
+
+.userIconList {
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: none;
+    .badgeClass {
+        border-radius: 1rem;
+        font-size: 52%;
+        margin-left: -5px;
+    }
+}
+
+.userIcon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    .badgeClass {
+        border-radius: 1rem;
+        font-size: 52%;
+        margin-left: -5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .userIconList {
+        display: inline;
+    }
+    .userIcon {
+        display: none;
+    }
+}
+
+footer {
+    // position: absolute;
+    bottom: 0;
+    width: 100%;
+    // position: fixed;
+    height: 11%;
+    background-color: #7DA89E;
+}
+
+footer ul.footerleft {
+    margin-left: 27em;
+    margin-top: .1em;
+}
+
+footer ul.footerleft li {
+    display: inline;
+    margin-right: 1em;
+}
+
+footer a {
+    color: #222;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.text-center {
+    float: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: center;
+}
+
+i {
+    padding-left: .5em;
+}

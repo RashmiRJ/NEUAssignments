@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Greener</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Analysis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Awareness</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Donate/Jobs</a>
+            </li>
+            <li class="nav-item userIconList">
+                <a class="nav-link" href="#"><i class="fa fa-user" data-toggle="modal" data-target="#userModal"><span class="badge badge-danger badgeClass">2</span></i></a>
+            </li>
+        </ul>
+    </div>
+    <i class="fa fa-user userIcon" data-toggle="modal" data-target="#userModal"><span class="badge badge-danger badgeClass">2</span></i>
+</nav>
+<router-outlet>
+</router-outlet>
+
+
+<footer class="footer">
+    <div id="my-alert-box" class="alert alert-danger collapse" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <p>Work in Progress. No content to display.</p>
+        
+     </div>
+    
+    <ul class="footerleft" >
+                    <li>
+                        <a href="" id="coolbutton" (click)="showAlert($event)" aria-hidden="true">FAQ </a>                   
+                    </li>
+                    <li>
+                        <content>•</content>    
+                                       
+                    </li>
+                    <li>
+                        <a href=""id="coolbutton" (click)="showAlert($event)" aria-hidden="true">About Us </a>     
+                                       
+                    </li>
+                    <li>
+                        <content>•</content>    
+                                       
+                    </li>
+                    <li>
+                      <a href=""id="coolbutton" (click)="showAlert($event)" aria-hidden="true">Terms & Conditions </a>                    
+                  </li>
+                  <li>
+                      <content>•</content>    
+                                     
+                  </li>
+                    <li>
+                        <a href=""id="coolbutton" (click)="showAlert($event)" aria-hidden="true">Contact Us </a>
+                    </li>
+                </ul>
+              <div class="text-center center-block " >
+                <a href=""><i id="social-fb" class="fa fa-facebook-square fa-2x social space"></i></a>
+                <a href=""><i id="social-tw" class="fa fa-twitter-square fa-2x social space"></i></a>
+                <a href=""><i id="social-gp" class="fa fa-instagram fa-2x social space"></i></a>
+                <a href=""><i id="social-em" class="fa fa-envelope-square fa-2x social space"></i></a>
+            </div>
+
+
+        
+        
+    
+</footer>
