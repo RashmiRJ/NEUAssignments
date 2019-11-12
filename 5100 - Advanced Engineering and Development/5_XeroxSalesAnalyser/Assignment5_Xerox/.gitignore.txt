@@ -1,0 +1,7 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+/Assignment5_Xerox/build/
+/Assignment5_Xerox/build.xml
+/Assignment4_Xerox/dist/
+./nbproject
+/lab7_skeleton/dist/
+/Assignment4_Bazinga/nbproject/private/
