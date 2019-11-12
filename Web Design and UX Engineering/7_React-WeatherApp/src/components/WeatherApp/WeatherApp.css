@@ -1,0 +1,30 @@
+.wrapper {
+    background: #85d1d1;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    padding: 50px;
+}
+
+label {
+    float: left;
+    width: 150px;
+    font-weight: bold;
+}
+
+select {
+    float: left;
+    width: 250px;
+}
+
+button {
+    float:right;
+}
+.floatRight {
+    text-align: center;
+}
+  
