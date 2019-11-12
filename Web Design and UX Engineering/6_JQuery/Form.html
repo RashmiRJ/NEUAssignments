@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Feedback</title>
+    <style>
+        label {
+            float: left;
+            width: 150px;
+        }
+        
+        #container {
+            width: 700px;
+            margin: auto;
+            background-color: beige;
+        }
+        
+        main {
+            padding: 50px;
+        }
+        
+        .error {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <main>
+            <h2>Feeback</h2>
+            <h3>Love something? Hate something? Let us know!</h3>
+            Note : Fields marked with an asterisk(*) are mandatory
+            <br><br>
+            <form method="post" id="form">
+                <label>Title*:</label>
+                <input type="radio" name="title" id="miss" value="miss" />Miss
+                <input type="radio" name="title" id="mr" value="mr" />Mr.
+                <input type="radio" name="title" id="mrs" value="mrs" />Mrs.
+                <span id="title"></span>
+                <br><br>
+                <label for="firstName">First Name*:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+                <br><br>
+
+
+                <label for="lastName">Last Name*:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                <br><br>
+
+
+                <label for="emailId">Email Id*:</label>
+                <input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+                <br><br>
+
+
+                <label for="phoneNumber">Phone Number*:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+                <br><br>
+
+                <label for="zipcode">ZipCode*:</label>
+                <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+                <br><br>
+
+                <label for="source" id="source">How did you hear*:</label>
+                <input type='checkbox' name="source" value="facebook" id="facebook" /> Facebook
+                <input type='checkbox' name="source" value="google" id="google" /> Google
+                <input type='checkbox' name="source" value="yelp" id="yelp" /> Yelp
+                <span id="sourceerror"></span>
+                <br><br>
+
+                <label for="favDrink">Your favourite drink:</label>
+                <select name="selectPosition" id="selectPosition">
+                        <option value="Just Java">Just Java</option>
+                        <option value="Cafe au Lait">Cafe au Lait</option>
+                        <option value="Iced Cappucino">Iced Cappucino</option>
+                        <option value="Mocha Latte">Mocha Latte</option>
+                        <option value="Lite Latte">Lite Latte</option>
+                    </select>
+                <br><br>
+
+                <div id="extraInfo">
+                    <input type='checkbox' name="dynChk" id="dynChk" />
+                    <span id="dynLbl"> Endless Cup $2.00</span>
+                    <input type="text" name="dynText" id="dynText" placeholder="special instructions" />
+                </div>
+                <br><br>
+
+                <label></label>
+
+                <label for="comments">Comments*:</label>
+                <textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+                <span id="commentserror"></span>
+                <br><br>
+                <input type="Submit">
+                <input type="Reset">
+                <br><br>
+            </form>
+        </main>
+    </div>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
