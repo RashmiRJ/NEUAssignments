@@ -1,0 +1,25 @@
+
+
+<h3>User List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            {{!-- <th>Password</th> --}}
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.email}}</td>
+            {{!-- <td>{{this.password}}</td> --}}
+            <td>
+                <a class="btn btn-dark" href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a class="btn btn-danger" href="/user/delete/{{this._id}}" onclick="return verifyPassword(this._id,this.password)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a class="btn btn-success" href="/user">Create New</a> 
