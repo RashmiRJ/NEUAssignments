@@ -1,0 +1,31 @@
+.product-image {
+    float: left;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .product-image-popup {
+    float: left;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .fade.in {
+    opacity: 1 !important;
+    }
+    
+    .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+    }
+    
+    .modal-backdrop .fade .in {
+    opacity: 0.5 !important;
+    }
+    
+    .modal-backdrop.fade {
+    opacity: 0.5 !important;
+    }

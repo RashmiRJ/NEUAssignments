@@ -1,0 +1,21 @@
+<div class="row"
+[ngClass]="{'border border-info': currentProduct == product}">
+  <div class="col-md-4">
+    <product-image [product]="product"></product-image>
+  </div>
+    <div class="col-md-4 padding-top">
+      <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <div class="card-text">
+        SKU #{{ product.sku }}
+      </div>
+      <div class="card-text">
+        <product-department [product]="product"></product-department>
+      </div> </div></div>
+      <div class="col-md-4">
+          <div class="card-body">
+        <product-popup [product]="product.imageUrl"></product-popup>
+        <price-display [price]="product.price"></price-display>
+      </div></div>
+   
+</div>

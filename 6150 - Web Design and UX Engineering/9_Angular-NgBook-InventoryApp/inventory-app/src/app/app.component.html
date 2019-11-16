@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <h2>Inventory App</h2>
+</nav>
+<div class="container">
+    <div class="card bg-light">
+            <products-list
+            [productList]="products"
+            (onProductSelected)="productWasSelected($event)">
+          </products-list>
+        </div>
+</div>
