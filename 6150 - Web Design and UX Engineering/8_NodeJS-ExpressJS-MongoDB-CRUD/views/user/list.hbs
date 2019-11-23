@@ -2,6 +2,17 @@
 
 <h3>User List</h3>
 <table class="table table-striped">
+     <script type="text/javascript">
+    function verifyPassword(id, pw){
+    var name = prompt('please enter your password'); 
+	if(name == pw){
+		location.href = '/user/delete/' + id;
+	}else{
+        alert('Invalid Password entered');
+	}
+
+}
+</script>
     <thead>
         <tr>
             <th>Email</th>
@@ -16,7 +27,7 @@
             {{!-- <td>{{this.password}}</td> --}}
             <td>
                 <a class="btn btn-dark" href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
-                <a class="btn btn-danger" href="/user/delete/{{this._id}}" onclick="return verifyPassword(this._id,this.password)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                <a class="btn btn-danger" onclick="verifyPassword('{{this._id}}','{{this.password}}')"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
             </td>
         </tr>
         {{/each}}
